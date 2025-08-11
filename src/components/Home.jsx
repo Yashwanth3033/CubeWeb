@@ -15,7 +15,7 @@ import { Link } from "react-router";
 
 export default function Home() {
     useEffect(() => {
-        // Check if user just completed Google authentication
+        // Google authentication
         const showWelcomeToast = localStorage.getItem("showWelcomeToast");
         if (showWelcomeToast === "true") {
             toast.success("Welcome! Google authentication successful!");
